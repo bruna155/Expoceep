@@ -1,0 +1,44 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Turismo de Cascavel</title>
+</head>
+
+<body>
+
+    <h1>Turismo de Cascavel</h1>
+    <h2>Cadastrar Ponto Turístico</h2>
+    <form onsubmit="cadastrarPontoTuristico(event)">
+
+        <label for="nome">Nome do ponto turístico:</label>
+        <input type="text" id="nome" required>
+
+        <br><br>
+
+        <label for="localizacao">Localização:</label>
+        <input type="text" id="localizacao" required>
+
+        <br><br>
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" required></textarea>
+
+        <br><br>
+
+        <button type="submit">
+            Cadastrar
+        </button>
+
+    </form>
+
+    <h2>Pontos turísticos cadastrados</h2>
+    <ul id="lista-pontos-turisticos"></ul>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
+```
