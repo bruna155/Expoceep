@@ -1,0 +1,861 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f7f4;
+    color: #26352d;
+}
+/* =========================
+   CABEÇALHO / IMAGEM
+========================= */
+.hero {
+    min-height: 520px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 40, 30, 0.55),
+            rgba(0, 70, 50, 0.45)
+        ),
+        url("../imagens/cascavel.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+/* =========================
+   MENU
+========================= */
+
+.navbar {
+    width: 100%;
+
+    padding: 22px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.20);
+}
+
+.logo {
+    font-size: 23px;
+
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ffd54f;
+}
+
+
+/* =========================
+   TEXTO PRINCIPAL
+========================= */
+
+.hero-content {
+    max-width: 850px;
+
+    margin: auto;
+
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+.subtitulo {
+    color: #ffd54f;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 58px;
+
+    margin-bottom: 20px;
+
+    text-shadow:
+        2px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.hero h1 span {
+    color: #ffd54f;
+}
+
+.hero-content p:not(.subtitulo) {
+    font-size: 20px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BOTÃO PRINCIPAL
+========================= */
+
+.botao {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background: #ffd54f;
+
+    color: #183c2c;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: white;
+
+    transform: translateY(-2px);
+}
+
+.botao:active {
+    transform: scale(0.97);
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.container {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 60px 0;
+}
+
+
+/* =========================
+   INTRODUÇÃO
+========================= */
+
+.introducao {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.icone {
+    font-size: 40px;
+}
+
+.introducao h2 {
+    font-size: 32px;
+
+    color: #176b4d;
+
+    margin: 10px 0;
+}
+
+.introducao p {
+    color: #66756d;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   TÍTULOS DAS SEÇÕES
+========================= */
+
+.titulo-secao {
+    display: flex;
+
+    gap: 15px;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.titulo-secao > span {
+    font-size: 38px;
+}
+
+.titulo-secao h2 {
+    color: #176b4d;
+
+    font-size: 30px;
+
+    margin-bottom: 5px;
+}
+
+.titulo-secao p {
+    color: #718078;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   LUGARES PARA CONHECER
+========================= */
+
+.lugares {
+    margin-bottom: 70px;
+}
+
+
+/* CARDS */
+
+.cards-lugares {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-top: 25px;
+}
+
+.lugar-card {
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.lugar-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 14px 30px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =========================
+   IMAGENS DOS CARDS
+========================= */
+
+.lugar-imagem {
+    height: 190px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 70px;
+
+    color: white;
+}
+
+
+/* CORES DOS CARDS */
+
+.parque {
+    background:
+        linear-gradient(
+            135deg,
+            #16834b,
+            #65d68a
+        );
+}
+
+.lago {
+    background:
+        linear-gradient(
+            135deg,
+            #087ca8,
+            #51c7e8
+        );
+}
+
+.igreja {
+    background:
+        linear-gradient(
+            135deg,
+            #7048a8,
+            #b17ad4
+        );
+}
+
+.cultura {
+    background:
+        linear-gradient(
+            135deg,
+            #d17b24,
+            #f0b45b
+        );
+}
+
+
+/* =========================
+   TEXTO DOS CARDS
+========================= */
+
+.lugar-conteudo {
+    padding: 25px;
+}
+
+.categoria {
+    display: inline-block;
+
+    color: #198754;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 8px;
+}
+
+.lugar-conteudo h3 {
+    color: #176b4d;
+
+    font-size: 21px;
+
+    margin: 8px 0 12px;
+}
+
+.lugar-conteudo p {
+    color: #68756e;
+
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+
+.local {
+    color: #40564a;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   BOTÃO VERDE
+========================= */
+
+.centralizar {
+    text-align: center;
+
+    margin-top: 35px;
+}
+
+.botao-verde {
+    display: inline-block;
+
+    background: #198754;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 14px 25px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao-verde:hover {
+    background: #126b42;
+
+    transform: translateY(-2px);
+}
+
+.botao-verde:active {
+    transform: scale(0.97);
+}
+
+
+/* =========================
+   CARD DO FORMULÁRIO
+========================= */
+
+.card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+
+    margin-bottom: 60px;
+}
+
+.card-titulo {
+    display: flex;
+
+    gap: 15px;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.card-titulo > span {
+    font-size: 35px;
+}
+
+.card h2 {
+    color: #176b4d;
+
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: #718078;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   CAMPOS
+========================= */
+
+.campo {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 18px;
+}
+
+.campo label {
+    font-weight: bold;
+
+    margin-bottom: 7px;
+
+    color: #34453c;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #d5dfd9;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-family: inherit;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: #2e9d70;
+
+    box-shadow:
+        0 0 0 3px rgba(46, 157, 112, 0.12);
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+
+/* =========================
+   CAMPOS LADO A LADO
+========================= */
+
+.linha {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr 1fr;
+
+    gap: 15px;
+}
+
+
+/* =========================
+   BOTÃO CADASTRAR
+========================= */
+
+.botao-cadastrar {
+    width: 100%;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #198754;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.botao-cadastrar:hover {
+    background: #126b42;
+
+    transform: translateY(-1px);
+}
+
+.botao-cadastrar:active {
+    transform: scale(0.97);
+
+    background: #0e5835;
+}
+
+
+/* =========================
+   PONTOS TURÍSTICOS
+========================= */
+
+.pontos {
+    margin-bottom: 50px;
+}
+
+
+/* =========================
+   LISTA VINDO DO BANCO
+========================= */
+
+#lista-pontos {
+    list-style: none;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+#lista-pontos li {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    border-left: 5px solid #198754;
+
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, 0.07);
+
+    line-height: 1.7;
+
+    transition: 0.3s;
+}
+
+#lista-pontos li:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+#lista-pontos li strong {
+    display: block;
+
+    color: #176b4d;
+
+    font-size: 21px;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    background: #123d2c;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px 20px;
+}
+
+footer p {
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+footer span {
+    color: #c7ddd3;
+}
+
+.logo-footer {
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+footer small {
+    display: block;
+
+    margin-top: 12px;
+
+    color: #9fc4b3;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+
+    .menu {
+        gap: 12px;
+
+        font-size: 14px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .hero {
+        min-height: 550px;
+
+        background-position: center;
+    }
+
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+
+    .hero-content p:not(.subtitulo) {
+        font-size: 17px;
+    }
+
+
+    .subtitulo {
+        font-size: 12px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .container {
+        width: 92%;
+
+        padding: 40px 0;
+    }
+
+
+    .introducao h2 {
+        font-size: 27px;
+    }
+
+
+    .titulo-secao h2 {
+        font-size: 24px;
+    }
+
+
+    .card {
+        padding: 22px;
+    }
+
+
+    .card-titulo {
+        align-items: flex-start;
+    }
+
+
+    .linha {
+        grid-template-columns: 1fr;
+    }
+
+
+    .cards-lugares {
+        grid-template-columns: 1fr;
+    }
+
+
+    .lugar-imagem {
+        height: 160px;
+
+        font-size: 60px;
+    }
+
+
+    .lugar-conteudo {
+        padding: 20px;
+    }
+
+
+    #lista-pontos {
+        grid-template-columns: 1fr;
+    }
+
+
+    .botao {
+        padding: 13px 22px;
+    }
+
+}
+
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .menu {
+        gap: 12px;
+
+        font-size: 14px;
+    }
+
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+
+    .hero-content p:not(.subtitulo) {
+        font-size: 17px;
+    }
+
+
+    .card {
+        padding: 22px;
+    }
+
+
+    .linha {
+        grid-template-columns: 1fr;
+    }
+
+
+    #lista-pontos {
+        grid-template-columns: 1fr;
+    }
+
+}
+#mensagem-cadastro {
+    display: none;
+    margin-top: 20px;
+    padding: 16px 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#mensagem-cadastro.sucesso {
+    display: block;
+    background: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #a3cfbb;
+}
+
+#mensagem-cadastro.erro {
+    display: block;
+    background: #f8d7da;
+    color: #842029;
+    border: 1px solid #f1aeb5;
+}
